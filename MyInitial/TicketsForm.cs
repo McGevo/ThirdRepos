@@ -32,8 +32,10 @@ namespace Ticketing
 
             if (chkDiscount.Checked)
                 { mDiscount = 0; }
-            if (chkChild.Checked)
+            else if (chkChild.Checked)
                 { mDiscount = 1; }
+            else
+                { mDiscount = -1; }
 
             if (radBalcony.Checked)
                 { mSection = 1; }
